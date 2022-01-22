@@ -42,4 +42,9 @@ namespace TestBattle
     {
         int RankLevel { get; }
     }
+
+    public interface IPassiveSkill : ISkillData
+    {
+        Type_SkillTriggerTime TriggerType { get; }
+    }
 }

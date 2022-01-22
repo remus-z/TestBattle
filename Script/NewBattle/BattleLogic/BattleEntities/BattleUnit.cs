@@ -85,6 +85,17 @@ namespace TestBattle
             this.InitTriggerSkill();
         }
 
+        public void UpdateUnitData(/*属性，可用技能，当前buff*/) { //暂定战斗中技能基本数据是不变的，这里不更新技能数据
+        }
+
+        //添加技能
+        public bool AddSkill(ISkillData skill) {
+            return true;
+        }
+
+        public void CastSkill(int skill_id,int skill_rank_level) { 
+        }
+
         public void ResetAttris(Dictionary<Type_Attribution, int> attris) {
             this._origin_attributes.Clear();
             this._attributes.Clear();
